@@ -1,0 +1,87 @@
+{
+  "policy": {
+    "name": "notify-overly-permissive-iam-users",
+    "description": "Notifies customers about IAM users with overly permissive permissions.\n",
+    "resource": "aws.iam-user",
+    "filters": [
+      {
+        "type": "value",
+        "key": "AttachedManagedPolicies[].PolicyName",
+        "value": "AdministratorAccess",
+        "op": "in"
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "soumya.de@agarro.com"
+        ],
+        "subject": "Overly Permissive IAM User Notification",
+        "template": "default.html",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "ece879cf-bf52-48a5-a3c6-412600f61ec3",
+    "start": 1689577741.5465314,
+    "end_time": 1689577749.072974,
+    "duration": 7.526442527770996
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "overpermission",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "iam-overly-permissive.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 21
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T12:39:09.071881",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T12:39:09.071939",
+      "Value": 7.5114946365356445,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "policy": {
+    "name": "notify-users-no-mfa",
+    "description": "Notifies IAM users who have not enabled Multi-Factor Authentication (MFA).\n",
+    "resource": "aws.iam-user",
+    "filters": [
+      {
+        "type": "mfa-device",
+        "key": "MFADevices",
+        "value": []
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "soumya.de@nagarro.com"
+        ],
+        "subject": "Notification of IAM users who have not enabled Multi-Factor Authentication",
+        "template": "default.html",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "e6e6c30e-181e-4f46-8142-1c9ce399dc09",
+    "start": 1689575602.4231346,
+    "end_time": 1689575624.0596254,
+    "duration": 21.63649082183838
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "mfaoutput",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "iam-user-mfa.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 21,
+    "iam.ListMFADevices": 21,
+    "iam.ListAccountAliases": 1,
+    "sqs.SendMessage": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T12:03:41.747207",
+      "Value": 20,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T12:03:41.747266",
+      "Value": 19.30942726135254,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-07-17T12:03:44.059547",
+      "Value": 2.309587001800537,
+      "Unit": "Seconds"
+    }
+  ]
+}

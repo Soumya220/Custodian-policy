@@ -1,0 +1,111 @@
+2023-07-17 14:26:02,077 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.ec2 region:us-east-1 count:0 time:2.44
+2023-07-17 14:33:58,764 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/query.py", line 549, in resources
+    resources = self.filter_resources(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/manager.py", line 112, in filter_resources
+    resources = f.process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 593, in process
+    return super(ValueFilter, self).process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 198, in process
+    return list(filter(self, resources))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 580, in __call__
+    matched = self.match(i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 644, in match
+    r = self.get_resource_value(self.k, i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 596, in get_resource_value
+    return super(ValueFilter, self).get_resource_value(k, i, self.data.get('value_regex'))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 258, in get_resource_value
+    self.expr[k] = jmespath_compile(k)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 969, in jmespath_compile
+    parsed = C7NJMESPathParser().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 945, in parse
+    result = super().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 88, in parse
+    parsed_result = self._do_parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 96, in _do_parse
+    return self._parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 109, in _parse
+    self._tokens = list(self.tokenizer)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/lexer.py", line 78, in tokenize
+    raise LexerError(lexer_position=start,
+jmespath.exceptions.LexerError: Bad jmespath expression: Unknown token '-':
+match-resource-type
+     ^
+2023-07-17 14:34:18,864 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:0 time:1.22
+2023-07-17 14:35:48,938 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:0 time:1.50
+2023-07-17 14:36:23,970 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.21
+2023-07-17 14:53:03,182 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.25
+2023-07-17 14:53:05,581 - custodian.actions - INFO - sent message:72b22a47-3786-4500-9a9c-85ddf1b6e695 policy:filter-unused-eips template:default.html count:1
+2023-07-17 14:53:05,584 - custodian.policy - INFO - policy:filter-unused-eips action:notify resources:1 execution_time:2.40
+2023-07-17 15:50:20,540 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.19
+2023-07-17 15:50:21,764 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 165, in process
+    alias = utils.get_account_alias_from_sts(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 301, in get_account_alias_from_sts
+    response = session.client('iam').list_account_aliases()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListAccountAliases operation: User: arn:aws:iam::200024982256:user/ebslistsnap is not authorized to perform: iam:ListAccountAliases on resource: * because no identity-based policy allows the iam:ListAccountAliases action
+2023-07-17 15:51:39,586 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.75
+2023-07-17 15:51:41,871 - custodian.actions - INFO - sent message:3b607381-634c-4858-b4ca-e8751cc92a86 policy:filter-unused-eips template:default.html count:1
+2023-07-17 15:51:41,872 - custodian.policy - INFO - policy:filter-unused-eips action:notify resources:1 execution_time:2.29
+2023-07-17 15:52:18,427 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.24
+2023-07-17 15:52:19,647 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 165, in process
+    alias = utils.get_account_alias_from_sts(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 301, in get_account_alias_from_sts
+    response = session.client('iam').list_account_aliases()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListAccountAliases operation: User: arn:aws:iam::200024982256:user/ebslistsnap is not authorized to perform: iam:ListAccountAliases on resource: * because no identity-based policy allows the iam:ListAccountAliases action
+2023-07-17 15:53:14,876 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.24
+2023-07-17 15:53:17,275 - custodian.actions - INFO - sent message:a23e6e0b-9ef0-4820-ae5d-2ef3499fbe8b policy:filter-unused-eips template:default.html count:1
+2023-07-17 15:53:17,275 - custodian.policy - INFO - policy:filter-unused-eips action:notify resources:1 execution_time:2.40
+2023-07-17 15:54:08,740 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:2.57
+2023-07-17 15:54:11,117 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 182, in process
+    receipt = self.send_data_message(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 233, in send_data_message
+    return self.send_sqs(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 300, in send_sqs
+    result = client.send_message(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the SendMessage operation: User: arn:aws:iam::200024982256:user/ebslistsnap is not authorized to perform: sqs:sendmessage on resource: arn:aws:sqs:us-east-1:200024982256:My-Queue because no identity-based policy allows the sqs:sendmessage action
+2023-07-17 15:55:02,554 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.38
+2023-07-17 15:55:05,010 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 182, in process
+    receipt = self.send_data_message(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 233, in send_data_message
+    return self.send_sqs(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 300, in send_sqs
+    result = client.send_message(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the SendMessage operation: User: arn:aws:iam::200024982256:user/ebslistsnap is not authorized to perform: sqs:sendmessage on resource: arn:aws:sqs:us-east-1:200024982256:My-Queue because no identity-based policy allows the sqs:sendmessage action
+2023-07-17 15:58:50,925 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.20
+2023-07-17 15:58:53,342 - custodian.actions - INFO - sent message:265c1a42-627b-4e1d-924c-2b9da9b0efa1 policy:filter-unused-eips template:default.html count:1
+2023-07-17 15:58:53,344 - custodian.policy - INFO - policy:filter-unused-eips action:notify resources:1 execution_time:2.42

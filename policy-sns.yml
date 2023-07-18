@@ -1,0 +1,22 @@
+policies:
+  - name: ebs-delete-old-ebs-snapshots
+    resource: ebs-snapshot
+    filters:
+        - type: age
+          days: 2
+          op: le
+    actions:
+     - type: notify
+       to:
+         - soumya.de@nagarro.com
+       owner_absent_contact:
+         - soumya.de@nagarro.com
+       # which template for the email should we use
+       template: default
+       transport:
+         type: sns
+         region: us-east-1
+         topic: "arn:aws:sns:us-east-1:200024982256:cloud-custodian"
+         attributes:
+              attribute_key: attribute_value
+              attribute_key_2: attribute_value_2

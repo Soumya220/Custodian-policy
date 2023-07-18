@@ -1,0 +1,14 @@
+[
+  {
+    "Description": "",
+    "Encrypted": false,
+    "OwnerId": "200024982256",
+    "Progress": "100%",
+    "SnapshotId": "snap-0df9d02d4bcc12582",
+    "StartTime": "2023-07-17T05:10:12.879000+00:00",
+    "State": "completed",
+    "VolumeId": "vol-0a868a038396ed50f",
+    "VolumeSize": 8,
+    "StorageTier": "standard"
+  }
+]

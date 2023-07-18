@@ -1,0 +1,27 @@
+2023-07-17 12:41:35,045 - custodian.policy - INFO - policy:users-with-admin-access resource:aws.iam-user region:us-east-1 count:9 time:29.95
+2023-07-17 12:48:27,656 - custodian.policy - INFO - policy:users-with-admin-access resource:aws.iam-user region:us-east-1 count:9 time:30.25
+2023-07-17 12:48:30,025 - custodian.actions - INFO - sent message:d12de637-50f5-47f5-a5e9-7e59c2474857 policy:users-with-admin-access template:Hello,
+The following IAM user has administrator-level access:
+User: {username}
+ARN: {user_arn}
+Please review and ensure that these permissions are granted appropriately.
+Regards,
+Cloud Custodian
+ count:9
+2023-07-17 12:48:30,027 - custodian.policy - INFO - policy:users-with-admin-access action:notify resources:9 execution_time:2.36
+2023-07-17 12:50:55,911 - custodian.policy - INFO - policy:users-with-admin-access resource:aws.iam-user region:us-east-1 count:9 time:29.78
+2023-07-17 12:50:58,346 - custodian.actions - INFO - sent message:9a4e23b2-4b4f-4b74-8c3a-e2e7b1220440 policy:users-with-admin-access template:Hello,
+The following IAM user has administrator-level access:
+User: {username}
+ARN: {user_arn}
+Please review and ensure that these permissions are granted appropriately.
+Regards,
+Cloud Custodian
+ count:9
+2023-07-17 12:50:58,348 - custodian.policy - INFO - policy:users-with-admin-access action:notify resources:9 execution_time:2.43
+2023-07-17 12:52:40,368 - custodian.policy - INFO - policy:users-with-admin-access resource:aws.iam-user region:us-east-1 count:9 time:31.19
+2023-07-17 12:52:43,099 - custodian.actions - INFO - sent message:d44cf432-1935-487e-bc71-ea0ead657347 policy:users-with-admin-access template:default count:9
+2023-07-17 12:52:43,100 - custodian.policy - INFO - policy:users-with-admin-access action:notify resources:9 execution_time:2.73
+2023-07-17 12:54:34,358 - custodian.policy - INFO - policy:users-with-admin-access resource:aws.iam-user region:us-east-1 count:9 time:29.92
+2023-07-17 12:54:36,594 - custodian.actions - INFO - sent message:3ef1adde-f33a-4c49-b4d9-27f19a4a3f95 policy:users-with-admin-access template:default.html count:9
+2023-07-17 12:54:36,595 - custodian.policy - INFO - policy:users-with-admin-access action:notify resources:9 execution_time:2.23

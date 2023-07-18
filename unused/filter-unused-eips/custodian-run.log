@@ -1,0 +1,14 @@
+2023-07-17 15:49:32,181 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.49
+2023-07-17 15:49:33,401 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 165, in process
+    alias = utils.get_account_alias_from_sts(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 301, in get_account_alias_from_sts
+    response = session.client('iam').list_account_aliases()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListAccountAliases operation: User: arn:aws:iam::200024982256:user/ebslistsnap is not authorized to perform: iam:ListAccountAliases on resource: * because no identity-based policy allows the iam:ListAccountAliases action

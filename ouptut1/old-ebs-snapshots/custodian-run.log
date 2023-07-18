@@ -1,0 +1,20 @@
+2023-07-17 10:38:30,337 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:0 time:1.22
+2023-07-17 10:40:25,466 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.36
+2023-07-17 10:40:27,705 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 182, in process
+    receipt = self.send_data_message(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 233, in send_data_message
+    return self.send_sqs(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 300, in send_sqs
+    result = client.send_message(
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.QueueDoesNotExist: An error occurred (AWS.SimpleQueueService.NonExistentQueue) when calling the SendMessage operation: The specified queue does not exist for this wsdl version.
+2023-07-17 10:41:30,608 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.31
+2023-07-17 10:41:32,982 - custodian.actions - INFO - sent message:d41523fb-ce41-434a-aab5-24d3352e8401 policy:old-ebs-snapshots template:default count:1
+2023-07-17 10:41:32,984 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.37

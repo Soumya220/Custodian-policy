@@ -1,0 +1,18 @@
+policies:
+  - name: old-ebs-snapshots
+    resource: aws.ebs-snapshot
+    filters:
+        - type: age
+          days: 30
+          op: le
+    actions:
+      - type: notify
+        template: default
+        template_format: 'text'
+        priority_header: '5'
+        to:
+          - soumya.de@nagarro.com
+        subject: List of EBS Snapshots which are Less than or equal to 30 days old
+        transport:
+          type: sqs
+          queue: https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue

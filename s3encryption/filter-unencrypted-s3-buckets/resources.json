@@ -1,0 +1,737 @@
+[
+  {
+    "Name": "aws-athena-query-results-cid-200024982256-us-east-1",
+    "CreationDate": "2023-07-13T11:07:08+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:200024982256:stack/CID-KPI-CUDOS-Dashboard-Deployment/62302ba0-216d-11ee-8267-0a09b2839c61"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "CID-KPI-CUDOS-Dashboard-Deployment"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "MyAthenaQueryResultsBucket"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": {
+      "Rules": [
+        {
+          "Expiration": {
+            "Days": 7
+          },
+          "ID": "DeleteContent",
+          "Filter": {
+            "Prefix": ""
+          },
+          "Status": "Enabled"
+        }
+      ]
+    },
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "aws-athena-query-results-cid-200024982256-us-east-n-virginia",
+    "CreationDate": "2023-06-07T12:39:11+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "ProjectName",
+        "Value": "Tillster"
+      },
+      {
+        "Key": "Team",
+        "Value": "Cloud-Finops"
+      },
+      {
+        "Key": "CostCentre",
+        "Value": "1111"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "aws-athena-query-results-us-east-1-200024982256",
+    "CreationDate": "2023-06-07T17:19:17+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "ProjectName",
+        "Value": "Tillster"
+      },
+      {
+        "Key": "Team",
+        "Value": "Cloud-Finops"
+      },
+      {
+        "Key": "CostCentre",
+        "Value": "1111"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "aws-cur-files",
+    "CreationDate": "2023-05-18T12:42:57+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "ProjectName",
+        "Value": "Tillster"
+      },
+      {
+        "Key": "Team",
+        "Value": "Cloud-Finops"
+      },
+      {
+        "Key": "CostCentre",
+        "Value": "1111"
+      }
+    ],
+    "Policy": "{\"Version\":\"2008-10-17\",\"Id\":\"Policy1335892530063\",\"Statement\":[{\"Sid\":\"Stmt1335892150622\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"billingreports.amazonaws.com\"},\"Action\":[\"s3:GetBucketAcl\",\"s3:GetBucketPolicy\"],\"Resource\":\"arn:aws:s3:::aws-cur-files\",\"Condition\":{\"StringEquals\":{\"aws:SourceAccount\":\"200024982256\",\"aws:SourceArn\":\"arn:aws:cur:us-east-1:200024982256:definition/*\"}}},{\"Sid\":\"Stmt1335892526596\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"billingreports.amazonaws.com\"},\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::aws-cur-files/*\",\"Condition\":{\"StringEquals\":{\"aws:SourceAccount\":\"200024982256\",\"aws:SourceArn\":\"arn:aws:cur:us-east-1:200024982256:definition/*\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "cf-templates-g8qxepd864qm-us-east-1",
+    "CreationDate": "2023-05-25T09:33:04+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "cid-200024982256-shared",
+    "CreationDate": "2023-06-12T11:26:02+00:00",
+    "Location": {
+      "LocationConstraint": "us-east-2"
+    },
+    "Tags": [],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "codepipeline-ap-south-1-478461141035",
+    "CreationDate": "2023-05-22T13:55:44+00:00",
+    "Location": {
+      "LocationConstraint": "ap-south-1"
+    },
+    "Tags": [],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"SSEAndSSLPolicy\",\"Statement\":[{\"Sid\":\"DenyUnEncryptedObjectUploads\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:PutObject\",\"Resource\":\"arn:aws:s3:::codepipeline-ap-south-1-478461141035/*\",\"Condition\":{\"StringNotEquals\":{\"s3:x-amz-server-side-encryption\":\"aws:kms\"}}},{\"Sid\":\"DenyInsecureConnections\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":\"arn:aws:s3:::codepipeline-ap-south-1-478461141035/*\",\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "datadog-aws-metric-stream-backup-200024982256-us-east-1",
+    "CreationDate": "2023-07-13T17:11:47+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:200024982256:stack/StackSet-DatadogStreams-6fd422db-dc39-432e-9696-39eab1f86839/5641f070-21a0-11ee-b675-0eb200d138db"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "StackSet-DatadogStreams-6fd422db-dc39-432e-9696-39eab1f86839"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "DatadogStreamBackupBucket"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "aws:kms"
+            },
+            "BucketKeyEnabled": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "datadogintegration-forwarderstack-forwarderbucket-dv769tgwoo9g",
+    "CreationDate": "2023-07-05T15:16:41+00:00",
+    "Location": {
+      "LocationConstraint": "ap-south-1"
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:ap-south-1:200024982256:stack/DatadogIntegration-ForwarderStack-A36GZVEQ8XKT/ece3b230-1b46-11ee-8c4e-06581bb40634"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "DatadogIntegration-ForwarderStack-A36GZVEQ8XKT"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "ForwarderBucket"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowSSLRequestsOnly\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":[\"arn:aws:s3:::datadogintegration-forwarderstack-forwarderbucket-dv769tgwoo9g\",\"arn:aws:s3:::datadogintegration-forwarderstack-forwarderbucket-dv769tgwoo9g/*\"],\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "datadog-forwarder-forwarderbucket-1unmq1h1n4nqf",
+    "CreationDate": "2023-07-10T04:33:15+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:200024982256:stack/datadog-forwarder/ddfd1a80-1eda-11ee-ace7-121d84b62ce9"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "datadog-forwarder"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "ForwarderBucket"
+      }
+    ],
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowSSLRequestsOnly\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:*\",\"Resource\":[\"arn:aws:s3:::datadog-forwarder-forwarderbucket-1unmq1h1n4nqf\",\"arn:aws:s3:::datadog-forwarder-forwarderbucket-1unmq1h1n4nqf/*\"],\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}}}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "elasticbeanstalk-ap-south-1-200024982256",
+    "CreationDate": "2023-05-22T13:38:44+00:00",
+    "Location": {
+      "LocationConstraint": "ap-south-1"
+    },
+    "Tags": [],
+    "Policy": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"eb-af163bf3-d27b-4712-b795-d1e33e331ca4\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::200024982256:role/ec2-user\"},\"Action\":[\"s3:ListBucket\",\"s3:ListBucketVersions\",\"s3:GetObject\",\"s3:GetObjectVersion\"],\"Resource\":[\"arn:aws:s3:::elasticbeanstalk-ap-south-1-200024982256\",\"arn:aws:s3:::elasticbeanstalk-ap-south-1-200024982256/resources/environments/*\"]},{\"Sid\":\"eb-58950a8c-feb6-11e2-89e0-0800277d041b\",\"Effect\":\"Deny\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"s3:DeleteBucket\",\"Resource\":\"arn:aws:s3:::elasticbeanstalk-ap-south-1-200024982256\"}]}",
+    "Acl": {
+      "Owner": {
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "mybookstore-assetsbucket-1t3sbekb59m0n",
+    "CreationDate": "2023-07-09T04:52:57+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:200024982256:stack/MyBookstore/73a338c0-1e14-11ee-913d-0a0ada0d6e67"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "MyBookstore"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "AssetsBucket"
+      }
+    ],
+    "Policy": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity ET63PI1BJHPMX\"},\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::mybookstore-assetsbucket-1t3sbekb59m0n/*\"}]}",
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": {
+      "IndexDocument": {
+        "Suffix": "index.html"
+      }
+    },
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "mybookstore-pipelineartifactsbucket-aliqpbqzr7x8",
+    "CreationDate": "2023-07-09T04:52:57+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "aws:cloudformation:stack-id",
+        "Value": "arn:aws:cloudformation:us-east-1:200024982256:stack/MyBookstore/73a338c0-1e14-11ee-913d-0a0ada0d6e67"
+      },
+      {
+        "Key": "aws:cloudformation:stack-name",
+        "Value": "MyBookstore"
+      },
+      {
+        "Key": "aws:cloudformation:logical-id",
+        "Value": "PipelineArtifactsBucket"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {},
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Name": "mybucket-custodian",
+    "CreationDate": "2023-06-29T10:41:31+00:00",
+    "Location": {
+      "LocationConstraint": null
+    },
+    "Tags": [
+      {
+        "Key": "env",
+        "Value": "dev"
+      }
+    ],
+    "Policy": null,
+    "Acl": {
+      "Owner": {
+        "DisplayName": "sigma.isvpractice.aws",
+        "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856"
+      },
+      "Grants": [
+        {
+          "Grantee": {
+            "DisplayName": "sigma.isvpractice.aws",
+            "ID": "d918280ac35b99d2103a92bb8682d60f0a59fc6597b5c183b4f1f27ec80e3856",
+            "Type": "CanonicalUser"
+          },
+          "Permission": "FULL_CONTROL"
+        }
+      ]
+    },
+    "Replication": null,
+    "Versioning": {
+      "Status": "Enabled"
+    },
+    "Website": null,
+    "Logging": {},
+    "Notification": {},
+    "Lifecycle": null,
+    "c7n:bucket-encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true
+          }
+        ]
+      }
+    }
+  }
+]

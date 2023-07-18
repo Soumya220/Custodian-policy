@@ -1,0 +1,33 @@
+2023-07-17 10:26:31,856 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/query.py", line 549, in resources
+    resources = self.filter_resources(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/manager.py", line 112, in filter_resources
+    resources = f.process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 593, in process
+    return super(ValueFilter, self).process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 198, in process
+    return list(filter(self, resources))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 580, in __call__
+    matched = self.match(i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 644, in match
+    r = self.get_resource_value(self.k, i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 596, in get_resource_value
+    return super(ValueFilter, self).get_resource_value(k, i, self.data.get('value_regex'))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 258, in get_resource_value
+    self.expr[k] = jmespath_compile(k)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 969, in jmespath_compile
+    parsed = C7NJMESPathParser().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 945, in parse
+    result = super().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 88, in parse
+    parsed_result = self._do_parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 96, in _do_parse
+    return self._parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 114, in _parse
+    raise exceptions.ParseError(t['start'], t['value'], t['type'],
+jmespath.exceptions.ParseError: Unexpected token: :: Parse error at column 3, token ":" (COLON), for expression:
+"c7n:AccessKeys"
+    ^

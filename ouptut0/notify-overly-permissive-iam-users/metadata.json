@@ -1,0 +1,86 @@
+{
+  "policy": {
+    "name": "notify-overly-permissive-iam-users",
+    "description": "Notifies customers about IAM users with overly permissive permissions.\n",
+    "resource": "aws.iam-user",
+    "filters": [
+      {
+        "type": "value",
+        "key": "access_key_count",
+        "value": 0,
+        "op": "gt"
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "soumya.de@agarro.com"
+        ],
+        "subject": "Overly Permissive IAM User Notification",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/MyQueue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "4133e1a3-db6e-40df-bf8f-f9965aeff170",
+    "start": 1689570050.2317722,
+    "end_time": 1689570057.5535433,
+    "duration": 7.321771144866943
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "ouptut0",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "iam-overly-permissive.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 20
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T10:30:57.552080",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T10:30:57.552130",
+      "Value": 7.30992865562439,
+      "Unit": "Seconds"
+    }
+  ]
+}

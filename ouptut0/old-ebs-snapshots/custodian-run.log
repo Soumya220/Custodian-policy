@@ -1,0 +1,21 @@
+2023-07-13 15:49:50,111 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.20
+2023-07-13 15:49:52,586 - custodian.actions - INFO - sent message:f6c2772c-e70b-4c47-9416-e3d3e73fb711 policy:old-ebs-snapshots template:default count:1
+2023-07-13 15:49:52,588 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.47
+2023-07-13 21:53:09,011 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.46
+2023-07-13 21:53:11,670 - custodian.actions - INFO - sent message:efd6588c-caf2-4cf8-8e23-0abe7555c235 policy:old-ebs-snapshots template:default count:1
+2023-07-13 21:53:11,671 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.65
+2023-07-13 22:01:08,542 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:2.45
+2023-07-13 22:01:11,316 - custodian.actions - INFO - sent message:1df49f3a-76d2-4735-bcb6-ebc6a9346b76 policy:old-ebs-snapshots template:default count:1
+2023-07-13 22:01:11,318 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.77
+2023-07-14 11:34:27,694 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.22
+2023-07-14 11:34:30,197 - custodian.actions - INFO - sent message:a8ea1bfd-480b-4eb8-b1ab-f698b1480ff7 policy:old-ebs-snapshots template:default count:1
+2023-07-14 11:34:30,199 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.50
+2023-07-14 11:37:26,158 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.18
+2023-07-14 11:37:28,491 - custodian.actions - INFO - sent message:d7851faf-5d2b-4c8c-858f-8145763a7dfa policy:old-ebs-snapshots template:default count:1
+2023-07-14 11:37:28,493 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.33
+2023-07-14 12:45:35,541 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.39
+2023-07-14 12:45:37,836 - custodian.actions - INFO - sent message:06cb6a88-43f9-46f6-8307-8c711ed67a30 policy:old-ebs-snapshots template:default count:1
+2023-07-14 12:45:37,838 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.29
+2023-07-14 12:49:12,162 - custodian.policy - INFO - policy:old-ebs-snapshots resource:aws.ebs-snapshot region:us-east-1 count:1 time:1.47
+2023-07-14 12:49:14,618 - custodian.actions - INFO - sent message:cd0e217d-d910-4095-9c95-0f43a4826a42 policy:old-ebs-snapshots template:default count:1
+2023-07-14 12:49:14,620 - custodian.policy - INFO - policy:old-ebs-snapshots action:notify resources:1 execution_time:2.45

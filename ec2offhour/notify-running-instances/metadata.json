@@ -1,0 +1,93 @@
+{
+  "policy": {
+    "name": "notify-running-instances",
+    "description": "Notifies customers about running instances at 6 PM to remind them to stop the instances.\n",
+    "resource": "aws.ec2",
+    "filters": [
+      {
+        "type": "value",
+        "key": "State.Name",
+        "value": "running"
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "template": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\soumya\\Custodian-email\\email-template.txt",
+        "template_format": "html",
+        "to": [
+          "soumya.de@nagarro.com"
+        ],
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/Queue-custodian"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "91a69a56-cdc8-456c-b223-3dd451634f88",
+    "start": 1689593393.0012763,
+    "end_time": 1689593396.3963299,
+    "duration": 3.3950536251068115
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "ec2offhour",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "ec2-off-hour.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeInstances": 1,
+    "iam.ListAccountAliases": 1,
+    "sqs.SendMessage": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T16:59:54.225040",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T16:59:54.225084",
+      "Value": 1.2137336730957031,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-07-17T16:59:56.396300",
+      "Value": 2.1697041988372803,
+      "Unit": "Seconds"
+    }
+  ]
+}

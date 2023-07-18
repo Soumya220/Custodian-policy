@@ -1,0 +1,123 @@
+2023-07-17 10:45:04,587 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/query.py", line 549, in resources
+    resources = self.filter_resources(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/manager.py", line 112, in filter_resources
+    resources = f.process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 593, in process
+    return super(ValueFilter, self).process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 198, in process
+    return list(filter(self, resources))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 580, in __call__
+    matched = self.match(i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 644, in match
+    r = self.get_resource_value(self.k, i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 596, in get_resource_value
+    return super(ValueFilter, self).get_resource_value(k, i, self.data.get('value_regex'))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 258, in get_resource_value
+    self.expr[k] = jmespath_compile(k)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 969, in jmespath_compile
+    parsed = C7NJMESPathParser().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 945, in parse
+    result = super().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 88, in parse
+    parsed_result = self._do_parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 96, in _do_parse
+    return self._parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 114, in _parse
+    raise exceptions.ParseError(t['start'], t['value'], t['type'],
+jmespath.exceptions.ParseError: Unexpected token: :: Parse error at column 3, token ":" (COLON), for expression:
+"c7n:AccessKeys"
+    ^
+2023-07-17 10:45:51,355 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/query.py", line 549, in resources
+    resources = self.filter_resources(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/manager.py", line 112, in filter_resources
+    resources = f.process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 593, in process
+    return super(ValueFilter, self).process(resources, event)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 198, in process
+    return list(filter(self, resources))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 580, in __call__
+    matched = self.match(i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 644, in match
+    r = self.get_resource_value(self.k, i)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 596, in get_resource_value
+    return super(ValueFilter, self).get_resource_value(k, i, self.data.get('value_regex'))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/filters/core.py", line 258, in get_resource_value
+    self.expr[k] = jmespath_compile(k)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 969, in jmespath_compile
+    parsed = C7NJMESPathParser().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/utils.py", line 945, in parse
+    result = super().parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 88, in parse
+    parsed_result = self._do_parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 96, in _do_parse
+    return self._parse(expression)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/jmespath/parser.py", line 114, in _parse
+    raise exceptions.ParseError(t['start'], t['value'], t['type'],
+jmespath.exceptions.ParseError: Unexpected token: :: Parse error at column 3, token ":" (COLON), for expression:
+"c7n:access_keys"
+    ^
+2023-07-17 10:46:13,533 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.08
+2023-07-17 10:46:15,698 - custodian.actions - INFO - sent message:a96e0033-05ca-4e6a-b036-f86b9b03c448 policy:notify-users-no-mfa template:default count:20
+2023-07-17 10:46:15,699 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.16
+2023-07-17 10:47:58,721 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:7.15
+2023-07-17 10:59:16,548 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.06
+2023-07-17 10:59:18,894 - custodian.actions - INFO - sent message:30d23f3e-49e4-4a55-afc1-fe271adf03d2 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 10:59:18,895 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.34
+2023-07-17 11:07:53,547 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.45
+2023-07-17 11:07:55,668 - custodian.actions - INFO - sent message:a63a4061-45ae-4194-8bbb-6811f6459770 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 11:07:55,670 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.12
+2023-07-17 11:09:05,089 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:6.94
+2023-07-17 11:09:07,339 - custodian.actions - INFO - sent message:4a0d2c0a-1def-4ce5-918b-3ffcfdc83251 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 11:09:07,340 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.25
+2023-07-17 11:10:00,916 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.40
+2023-07-17 11:10:03,112 - custodian.actions - INFO - sent message:ac68db8b-bae0-4177-8ca9-53dda0e15349 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 11:10:03,114 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.19
+2023-07-17 11:31:20,799 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.27
+2023-07-17 11:31:23,065 - custodian.actions - INFO - sent message:c5b3c340-8211-4021-a1a7-fb89f10dac53 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 11:31:23,067 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.26
+2023-07-17 11:36:25,065 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.09
+2023-07-17 11:36:27,735 - custodian.actions - INFO - sent message:9aab51f1-6866-47d4-bccf-929ac71e6ac8 policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 11:36:27,736 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.67
+2023-07-17 11:37:51,865 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:7.33
+2023-07-17 11:37:54,106 - custodian.actions - INFO - sent message:efa8f84e-9712-4739-b4b4-0362fd187cd2 policy:notify-users-no-mfa template:default count:20
+2023-07-17 11:37:54,108 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.24
+2023-07-17 11:45:49,304 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:18.06
+2023-07-17 11:46:31,434 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:1 time:18.07
+2023-07-17 11:46:33,826 - custodian.actions - INFO - sent message:8597a07b-e596-4791-8840-b936ad78bee8 policy:notify-users-no-mfa template:default count:1
+2023-07-17 11:46:33,828 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:1 execution_time:2.39
+2023-07-17 11:47:56,245 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:18.19
+2023-07-17 11:48:45,411 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:18.45
+2023-07-17 11:50:45,043 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:18.53
+2023-07-17 11:53:40,401 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:18.63
+2023-07-17 11:54:15,747 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:17.83
+2023-07-17 11:54:46,852 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:1 time:18.22
+2023-07-17 11:54:49,233 - custodian.actions - INFO - sent message:6945d01f-f4d6-4977-9bbc-b199da79745f policy:notify-users-no-mfa template:default count:1
+2023-07-17 11:54:49,234 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:1 execution_time:2.38
+2023-07-17 11:55:45,901 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:19.01
+2023-07-17 11:56:19,435 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:21 time:19.82
+2023-07-17 11:56:22,041 - custodian.actions - INFO - sent message:650ee2a0-46ff-4cc5-83e6-c8e3c3c85183 policy:notify-users-no-mfa template:default count:21
+2023-07-17 11:56:22,043 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:21 execution_time:2.59
+2023-07-17 11:57:15,004 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:0 time:19.64
+2023-07-17 11:58:40,305 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:19.26
+2023-07-17 11:58:42,524 - custodian.actions - INFO - sent message:b9d19727-bfbc-4682-a6b1-6f3964f8ce06 policy:notify-users-no-mfa template:default count:20
+2023-07-17 11:58:42,525 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.22
+2023-07-17 11:59:56,033 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:21 time:19.64
+2023-07-17 11:59:58,272 - custodian.actions - INFO - sent message:f5fbc5d2-93d5-419d-a07a-8a5707a3ef3b policy:notify-users-no-mfa template:default count:21
+2023-07-17 11:59:58,274 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:21 execution_time:2.24
+2023-07-17 12:00:47,334 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:18.89
+2023-07-17 12:00:49,825 - custodian.actions - INFO - sent message:3cc5b986-0124-4b21-8771-2b431b4bee5d policy:notify-users-no-mfa template:default count:20
+2023-07-17 12:00:49,827 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.49
+2023-07-17 12:01:20,433 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:19.40
+2023-07-17 12:01:22,672 - custodian.actions - INFO - sent message:7acb1cec-ddf5-4461-8f2f-c0afdecfb754 policy:notify-users-no-mfa template:default count:20
+2023-07-17 12:01:22,675 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.24
+2023-07-17 12:03:41,746 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:20 time:19.31
+2023-07-17 12:03:44,057 - custodian.actions - INFO - sent message:306e1a44-6b8d-4786-821b-00e5f28b289c policy:notify-users-no-mfa template:default.html count:20
+2023-07-17 12:03:44,059 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:20 execution_time:2.31

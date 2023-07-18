@@ -1,0 +1,87 @@
+{
+  "policy": {
+    "name": "filter-unencrypted-s3-buckets",
+    "description": "Filters out S3 buckets that are not encrypted.\n",
+    "resource": "aws.s3",
+    "filters": [
+      {
+        "type": "bucket-encryption",
+        "state": true
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "f71ff389-dd55-4a38-831c-55495da15111",
+    "start": 1689583064.902463,
+    "end_time": 1689583085.450996,
+    "duration": 20.548532962799072
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "s3encryption",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "s3-encrypion-status.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "s3.ListBuckets": 1,
+    "s3.GetBucketLocation": 14,
+    "s3.GetBucketTagging": 14,
+    "s3.GetBucketPolicy": 14,
+    "s3.GetBucketAcl": 14,
+    "s3.GetBucketReplication": 14,
+    "s3.GetBucketVersioning": 14,
+    "s3.GetBucketWebsite": 14,
+    "s3.GetBucketLogging": 14,
+    "s3.GetBucketNotificationConfiguration": 14,
+    "s3.GetBucketLifecycleConfiguration": 14,
+    "s3.GetBucketEncryption": 14
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T14:08:05.449405",
+      "Value": 14,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T14:08:05.449424",
+      "Value": 20.53502058982849,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-07-17T14:08:05.450978",
+      "Value": 4.0531158447265625e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

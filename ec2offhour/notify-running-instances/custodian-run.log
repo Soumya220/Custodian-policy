@@ -1,0 +1,45 @@
+2023-07-17 16:42:22,514 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.50
+2023-07-17 16:42:25,264 - custodian.actions - INFO - sent message:b3d51d9e-f03c-46ea-817a-fa8372268783 policy:notify-running-instances template:Subject: Reminder: Running EC2 Instances at 6 PM
+
+Hello,
+
+This is a reminder that the following EC2 instances are running in your AWS account at 6 PM:
+
+{% for instance in resources %}
+Instance ID: {{ instance.instance_id }}
+VPC ID: {{ instance.vpc_id }}
+Instance Type: {{ instance.instance_type }}
+Launch Time: {{ instance.launch_time }}
+Private IP: {{ instance.private_ip_address }}
+{% endfor %}
+
+Thank you for your attention to this matter.
+ count:1
+2023-07-17 16:42:25,266 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.75
+2023-07-17 16:43:08,274 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.39
+2023-07-17 16:43:10,464 - custodian.actions - INFO - sent message:149f481d-ad22-43b7-88f4-c0437f978379 policy:notify-running-instances template:Subject: Reminder: Running EC2 Instances at 6 PM
+
+Hello,
+
+This is a reminder that the following EC2 instances are running in your AWS account at 6 PM:
+
+{% for instance in resources %}
+Instance ID: {{ instance.instance_id }}
+VPC ID: {{ instance.vpc_id }}
+Instance Type: {{ instance.instance_type }}
+Launch Time: {{ instance.launch_time }}
+Private IP: {{ instance.private_ip_address }}
+{% endfor %}
+
+Thank you for your attention to this matter.
+ count:1
+2023-07-17 16:43:10,465 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.19
+2023-07-17 16:47:28,710 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.45
+2023-07-17 16:47:30,995 - custodian.actions - INFO - sent message:d878004e-9974-420b-a91f-1990cd33997f policy:notify-running-instances template:default count:1
+2023-07-17 16:47:30,997 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.28
+2023-07-17 16:58:21,184 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.37
+2023-07-17 16:58:23,471 - custodian.actions - INFO - sent message:127edcfa-34c2-4a7f-a696-dd1ea0dd5481 policy:notify-running-instances template:email-template.txt count:1
+2023-07-17 16:58:23,472 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.29
+2023-07-17 16:59:54,222 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.21
+2023-07-17 16:59:56,387 - custodian.actions - INFO - sent message:368cf962-196c-4898-9d7b-a562269db267 policy:notify-running-instances template:\\wsl.localhost\Ubuntu-20.04\home\soumya\Custodian-email\email-template.txt count:1
+2023-07-17 16:59:56,396 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.17

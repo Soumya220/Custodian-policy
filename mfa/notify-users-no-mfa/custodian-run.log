@@ -1,0 +1,19 @@
+2023-07-18 11:18:18,678 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:21 time:19.82
+2023-07-18 11:18:20,814 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 182, in process
+    receipt = self.send_data_message(message)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 233, in send_data_message
+    return self.send_sqs(message)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 300, in send_sqs
+    result = client.send_message(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.QueueDoesNotExist: An error occurred (AWS.SimpleQueueService.NonExistentQueue) when calling the SendMessage operation: The specified queue does not exist for this wsdl version.
+2023-07-18 11:20:00,697 - custodian.policy - INFO - policy:notify-users-no-mfa resource:aws.iam-user region:us-east-1 count:21 time:19.40
+2023-07-18 11:20:02,899 - custodian.actions - INFO - sent message:03ab2a11-f632-4dc6-a882-c2396e8fde9d policy:notify-users-no-mfa template:default.html count:21
+2023-07-18 11:20:02,899 - custodian.policy - INFO - policy:notify-users-no-mfa action:notify resources:21 execution_time:2.20

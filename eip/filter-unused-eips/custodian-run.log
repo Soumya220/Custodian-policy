@@ -1,0 +1,20 @@
+2023-07-18 10:50:13,409 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:0 time:1.36
+2023-07-18 10:50:39,755 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.15
+2023-07-18 10:50:42,082 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 182, in process
+    receipt = self.send_data_message(message)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 233, in send_data_message
+    return self.send_sqs(message)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 300, in send_sqs
+    result = client.send_message(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.QueueDoesNotExist: An error occurred (AWS.SimpleQueueService.NonExistentQueue) when calling the SendMessage operation: The specified queue does not exist for this wsdl version.
+2023-07-18 10:51:52,212 - custodian.policy - INFO - policy:filter-unused-eips resource:aws.elastic-ip region:us-east-1 count:1 time:1.25
+2023-07-18 10:51:54,571 - custodian.actions - INFO - sent message:62eea53e-bd1f-4669-8fb7-8f623deba843 policy:filter-unused-eips template:default.html count:1
+2023-07-18 10:51:54,572 - custodian.policy - INFO - policy:filter-unused-eips action:notify resources:1 execution_time:2.36

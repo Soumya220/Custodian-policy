@@ -1,0 +1,48 @@
+2023-07-17 15:00:07,230 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.23
+2023-07-17 15:04:11,507 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.26
+2023-07-17 15:04:13,856 - custodian.actions - INFO - sent message:4b2f70f1-9f42-477e-a26f-af228fd3a000 policy:notify-running-instances template:default.html count:1
+2023-07-17 15:04:13,858 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.35
+2023-07-17 15:13:03,611 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.27
+2023-07-17 15:13:06,150 - custodian.actions - INFO - sent message:7ef618a8-22b5-4d16-8174-0fbb09500848 policy:notify-running-instances template:Hello,
+This is a reminder that there are running EC2 instances in your AWS account at 6 PM.
+Please ensure that you stop the instances that are not needed during non-working hours to optimize costs and improve resource utilization.
+Thank you for your attention to this matter.
+ count:1
+2023-07-17 15:13:06,152 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.54
+2023-07-17 15:14:56,003 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.33
+2023-07-17 15:14:58,440 - custodian.actions - INFO - sent message:93e83b78-a010-4f75-8edb-0b327cb747dc policy:notify-running-instances template:Hello,
+
+This is a reminder that there are running EC2 instances in your AWS account at 6 PM.
+
+Please ensure that you stop the instances that are not needed during non-working hours to optimize costs and improve resource utilization.
+
+Thank you for your attention to this matter.
+ count:1
+2023-07-17 15:14:58,441 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.43
+2023-07-17 15:19:43,834 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.17
+2023-07-17 15:19:46,267 - custodian.actions - INFO - sent message:3c93e220-6dd1-47b3-82ba-97112106d753 policy:notify-running-instances template:<html> <body>
+  <p>Hello,</p>
+  <p>This is a reminder that there are running EC2 instances in your AWS account at 6 PM.</p>
+  <p>Please ensure that you stop the instances that are not needed during non-working hours to optimize costs and improve resource utilization.</p>
+  <p>Thank you for your attention to this matter.</p>
+</body> </html>
+ count:1
+2023-07-17 15:19:46,270 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.43
+2023-07-17 15:26:42,825 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.23
+2023-07-17 15:26:45,230 - custodian.actions - INFO - sent message:243fd61a-487c-4309-918a-2a3a57fa3df6 policy:notify-running-instances template:default.txt count:1
+2023-07-17 15:26:45,232 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.40
+2023-07-17 15:28:15,800 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.50
+2023-07-17 15:28:18,172 - custodian.actions - INFO - sent message:39e5fd09-f336-42c8-9d4a-2f401e27510b policy:notify-running-instances template:default.txt count:1
+2023-07-17 15:28:18,173 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.37
+2023-07-17 15:29:22,194 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.26
+2023-07-17 15:29:25,185 - custodian.actions - INFO - sent message:79f280af-05e1-4840-99b7-c26941fcc301 policy:notify-running-instances template:default count:1
+2023-07-17 15:29:25,187 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.99
+2023-07-17 15:37:02,230 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.35
+2023-07-17 15:37:04,485 - custodian.actions - INFO - sent message:7ee5811b-7973-4784-83e1-899a2b173244 policy:notify-running-instances template:running-instance-template.txt count:1
+2023-07-17 15:37:04,487 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.25
+2023-07-17 15:39:37,396 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:1 time:1.24
+2023-07-17 15:39:39,949 - custodian.actions - INFO - sent message:f4546d9f-6321-4427-af39-39640e849fa5 policy:notify-running-instances template:default count:1
+2023-07-17 15:39:39,951 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:1 execution_time:2.55
+2023-07-17 15:44:06,976 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:3 time:1.93
+2023-07-17 15:44:09,542 - custodian.actions - INFO - sent message:82938639-4931-40b9-9e34-481a1ffbf8a6 policy:notify-running-instances template:default count:3
+2023-07-17 15:44:09,544 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:3 execution_time:2.56

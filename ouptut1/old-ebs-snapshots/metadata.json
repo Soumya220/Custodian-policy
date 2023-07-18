@@ -1,0 +1,95 @@
+{
+  "policy": {
+    "name": "old-ebs-snapshots",
+    "resource": "aws.ebs-snapshot",
+    "filters": [
+      {
+        "type": "age",
+        "days": 30,
+        "op": "le"
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "template": "default",
+        "template_format": "text",
+        "priority_header": "5",
+        "to": [
+          "soumya.de@nagarro.com"
+        ],
+        "subject": "List of EBS Snapshots which are Less than or equal to 30 days old",
+        "html": "<p>Hello,</p>\n<p>This is a notification to remind you to enable Multi-Factor Authentication (MFA) for your AWS IAM user account.</p>\n<p>MFA provides an additional layer of security to help protect your AWS resources.</p>\n<p>Please follow the AWS documentation to enable MFA:</p>\n<p><a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html\" target=\"_blank\">Enabling MFA</a></p>\n<p>Thank you for your attention to this matter.</p>\n",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "07f05526-fd6e-4a8c-865d-472d7ded1087",
+    "start": 1689570689.294348,
+    "end_time": 1689570692.984833,
+    "duration": 3.6904850006103516
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "ouptut1",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "policy-sqs.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeSnapshots": 1,
+    "iam.ListAccountAliases": 1,
+    "sqs.SendMessage": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T10:41:30.609757",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T10:41:30.609797",
+      "Value": 1.3056104183197021,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-07-17T10:41:32.984785",
+      "Value": 2.3743393421173096,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "policy": {
+    "name": "filter-unused-eips",
+    "description": "Filters out unused and unattached Elastic IP addresses (EIPs).\n",
+    "resource": "aws.elastic-ip",
+    "filters": [
+      {
+        "type": "value",
+        "key": "attachment.State",
+        "value": null
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "soumya.de@nagarro.com"
+        ],
+        "subject": "Unused and Unattached Elastic IP Notification",
+        "template": "default.html",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "865b52f1-b546-42ff-9e87-f9cc58fe5c17",
+    "start": 1689589729.7072947,
+    "end_time": 1689589733.345835,
+    "duration": 3.638540267944336
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "s3encryption",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "unused-eip.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeAddresses": 1,
+    "iam.ListAccountAliases": 1,
+    "sqs.SendMessage": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T15:58:50.925997",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T15:58:50.926046",
+      "Value": 1.202571153640747,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-07-17T15:58:53.345774",
+      "Value": 2.4192631244659424,
+      "Unit": "Seconds"
+    }
+  ]
+}

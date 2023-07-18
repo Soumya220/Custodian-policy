@@ -1,0 +1,1 @@
+2023-07-17 10:30:57,550 - custodian.policy - INFO - policy:notify-overly-permissive-iam-users resource:aws.iam-user region:us-east-1 count:0 time:7.31

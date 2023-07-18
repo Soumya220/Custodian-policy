@@ -1,0 +1,12 @@
+[
+  {
+    "PublicIp": "50.19.143.68",
+    "AllocationId": "eipalloc-0ab8e83be8b70ebfc",
+    "Domain": "vpc",
+    "PublicIpv4Pool": "amazon",
+    "NetworkBorderGroup": "us-east-1",
+    "c7n:MatchedFilters": [
+      "attachment.State"
+    ]
+  }
+]

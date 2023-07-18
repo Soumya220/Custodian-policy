@@ -1,0 +1,5 @@
+2023-07-17 14:03:13,560 - custodian.policy - INFO - policy:filter-unencrypted-s3-buckets resource:aws.s3 region:us-east-1 count:0 time:13.06
+2023-07-17 14:03:58,958 - custodian.policy - INFO - policy:filter-unencrypted-s3-buckets resource:aws.s3 region:us-east-1 count:0 time:15.58
+2023-07-17 14:04:23,223 - custodian.policy - INFO - policy:filter-unencrypted-s3-buckets resource:aws.s3 region:us-east-1 count:0 time:15.72
+2023-07-17 14:06:54,270 - custodian.policy - INFO - policy:filter-unencrypted-s3-buckets resource:aws.s3 region:us-east-1 count:0 time:26.69
+2023-07-17 14:08:05,449 - custodian.policy - INFO - policy:filter-unencrypted-s3-buckets resource:aws.s3 region:us-east-1 count:14 time:20.54

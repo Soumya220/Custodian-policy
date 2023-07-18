@@ -1,0 +1,84 @@
+2023-07-13 12:59:30,681 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.42
+2023-07-13 12:59:33,120 - custodian.actions - INFO - sent message:bd452344-f9b7-51f9-a4bb-7e6d53ab23c7 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 12:59:33,122 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.44
+2023-07-13 14:01:11,896 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.30
+2023-07-13 14:01:14,232 - custodian.actions - INFO - sent message:69a5ba63-9a3f-5dc2-8f90-e74a22ad39e5 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 14:01:14,234 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.33
+2023-07-13 14:01:54,746 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.15
+2023-07-13 14:01:57,062 - custodian.actions - INFO - sent message:e5a4d9a1-e3e1-5f2c-b0ed-84885b5d3da4 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 14:01:57,063 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.32
+2023-07-13 14:04:44,960 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.40
+2023-07-13 14:04:47,296 - custodian.actions - INFO - sent message:46241dab-bd0b-5e4b-9025-4082046c34e1 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 14:04:47,297 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.34
+2023-07-13 14:11:13,545 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.15
+2023-07-13 14:11:15,827 - custodian.actions - INFO - sent message:dc106d88-5196-51bb-87d1-30a1eb7db211 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 14:11:15,829 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.28
+2023-07-13 14:15:13,735 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.12
+2023-07-13 14:15:18,374 - custodian.actions - INFO - sent message:2a4e2779-0b31-5bcc-97fa-7a50b0ef05b1 policy:ebs-delete-old-ebs-snapshots template:text-template count:1
+2023-07-13 14:15:18,375 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:4.64
+2023-07-13 14:31:13,287 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.43
+2023-07-13 14:31:15,747 - custodian.actions - INFO - sent message:3eb74f84-3340-5554-8e47-12ad8cdbfc35 policy:ebs-delete-old-ebs-snapshots template:text-template count:1
+2023-07-13 14:31:15,749 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.45
+2023-07-13 14:42:15,155 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.46
+2023-07-13 14:42:17,620 - custodian.actions - INFO - sent message:08a59a42-ff4c-46e2-a1d9-fbd42c74f259 policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 14:42:17,622 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.46
+2023-07-13 14:44:41,275 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.71
+2023-07-13 14:44:43,550 - custodian.actions - INFO - sent message:d263fa52-91c2-45ae-92f1-155b398d6f3a policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 14:44:43,550 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.27
+2023-07-13 15:03:00,750 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.15
+2023-07-13 15:03:03,109 - custodian.actions - INFO - sent message:0fae07c1-b684-4882-9d94-62f7ae2f24f6 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 15:03:03,111 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.36
+2023-07-13 15:04:23,328 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.11
+2023-07-13 15:04:25,768 - custodian.actions - INFO - sent message:bf060684-c274-4093-93de-1602b4706aaf policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 15:04:25,769 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.44
+2023-07-13 15:11:00,834 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.25
+2023-07-13 15:11:04,071 - custodian.actions - INFO - sent message:5b4466f7-4691-4d3d-90bd-80fdda88aef5 policy:ebs-delete-old-ebs-snapshots template:policy-template count:1
+2023-07-13 15:11:04,073 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:3.24
+2023-07-13 15:31:07,094 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.06
+2023-07-13 15:31:09,480 - custodian.actions - INFO - sent message:997c5ef2-db81-55b1-a7dc-03db16244f9b policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 15:31:09,481 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.38
+2023-07-13 15:31:45,614 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.13
+2023-07-13 15:31:47,805 - custodian.actions - INFO - sent message:425f5ffd-90c4-51b6-8878-02d45d0fd09a policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 15:31:47,807 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.19
+2023-07-13 15:59:18,876 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.36
+2023-07-13 15:59:21,133 - custodian.actions - INFO - sent message:caa00a3e-c0c4-59aa-8852-5717148424bb policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 15:59:21,141 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.26
+2023-07-13 16:07:30,198 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.22
+2023-07-13 16:07:31,415 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/policy.py", line 364, in run
+    results = a.process(resources)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 178, in process
+    message['action'] = self.expand_variables(message)
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/actions/notify.py", line 30, in expand_variables
+    p.setdefault('to', []).extend(ValuesFrom(to_from, self.manager).get_values())
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/resolver.py", line 166, in get_values
+    contents = self._get_values()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/resolver.py", line 171, in _get_values
+    contents, format = self.get_contents()
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/resolver.py", line 154, in get_contents
+    contents = str(self.resolver.resolve(**params))
+  File "/home/soumya/Custodian-email/custodian/lib/python3.8/site-packages/c7n/resolver.py", line 37, in resolve
+    req = Request(uri, headers=headers)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'soumya.de@nagarro.com'
+2023-07-13 16:14:57,961 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.39
+2023-07-13 16:15:00,290 - custodian.actions - INFO - sent message:f26e9a10-469f-525e-90dc-c7399173067a policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 16:15:00,292 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.33
+2023-07-13 16:17:03,981 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.16
+2023-07-13 16:17:06,338 - custodian.actions - INFO - sent message:ef7d1aa2-3397-5edb-b6ad-478bebfdc767 policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 16:17:06,340 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.36
+2023-07-13 16:18:12,647 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.42
+2023-07-13 16:18:14,985 - custodian.actions - INFO - sent message:daa58e4a-6d2a-5bac-9d8c-d363b584db4b policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-13 16:18:14,987 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.34
+2023-07-14 12:33:11,179 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.17
+2023-07-14 12:33:13,628 - custodian.actions - INFO - sent message:8ad9d1a7-9dd3-5459-8519-8c8d68a264c0 policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-14 12:33:13,630 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.45
+2023-07-14 12:34:10,572 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots resource:ebs-snapshot region:us-east-1 count:1 time:1.08
+2023-07-14 12:34:12,788 - custodian.actions - INFO - sent message:e6d3a53f-ad9d-5986-a94c-f815583157fa policy:ebs-delete-old-ebs-snapshots template:default count:1
+2023-07-14 12:34:12,789 - custodian.policy - INFO - policy:ebs-delete-old-ebs-snapshots action:notify resources:1 execution_time:2.21

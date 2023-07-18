@@ -1,0 +1,9 @@
+Subject: Reminder: Running EC2 Instances at 6 PM
+
+Hello,
+
+This is a reminder that your EC2 instances are still running in your AWS account, even though it is already 6 PM.
+
+Please ensure that you stop the instances that are not needed during non-working hours to optimize costs and improve resource utilization.
+
+Thank you for your attention to this matter.

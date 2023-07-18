@@ -1,0 +1,71 @@
+{
+  "policy": {
+    "name": "ec2-off-hours-instances",
+    "resource": "ec2",
+    "comments": "Notify EC2 instances as per schedule in c7n_off_hours\n",
+    "filters": [
+      {
+        "type": "offhour",
+        "default_tz": "Asia/Kolkata",
+        "offhour": 14
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "fa1c81f5-00dd-46b5-885b-8872a37275a5",
+    "start": 1689586054.7042596,
+    "end_time": 1689586055.8589718,
+    "duration": 1.154712200164795
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "s3encryption",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "ec2-off-hour.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeInstances": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T14:57:35.857772",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T14:57:35.857839",
+      "Value": 1.1437499523162842,
+      "Unit": "Seconds"
+    }
+  ]
+}

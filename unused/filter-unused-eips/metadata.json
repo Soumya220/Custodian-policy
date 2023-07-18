@@ -1,0 +1,92 @@
+{
+  "policy": {
+    "name": "filter-unused-eips",
+    "description": "Filters out unused and unattached Elastic IP addresses (EIPs).\n",
+    "resource": "aws.elastic-ip",
+    "filters": [
+      {
+        "type": "value",
+        "key": "attachment.State",
+        "value": null
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "to": [
+          "soumya.de@nagarro.com"
+        ],
+        "subject": "Unused and Unattached Elastic IP Notification",
+        "template": "default.html",
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-east-1.amazonaws.com/200024982256/My-Queue"
+        }
+      }
+    ]
+  },
+  "version": "0.9.28",
+  "execution": {
+    "id": "2090c5a6-7aa2-42ba-945e-0dc8e350419e",
+    "start": 1689589170.6576092,
+    "end_time": 1689589173.4004934,
+    "duration": 2.7428841590881348
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "200024982256",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "unused",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "unused-eip.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeAddresses": 1,
+    "iam.ListAccountAliases": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-07-17T15:49:32.182330",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-07-17T15:49:32.182360",
+      "Value": 1.490053415298462,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "PolicyException",
+      "Timestamp": "2023-07-17T15:49:33.400453",
+      "Value": 1,
+      "Unit": "Count"
+    }
+  ]
+}

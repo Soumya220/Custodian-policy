@@ -1,0 +1,100 @@
+2023-07-18 08:32:16,857 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 08:32:18,167 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-notify-running-instances
+2023-07-18 08:59:45,286 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 09:08:48,583 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 09:12:32,857 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 09:13:29,156 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 09:16:31,674 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 142, in resources
+    return super(EC2, self).resources(query=query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 540, in resources
+    resources = self.source.resources(query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 232, in resources
+    return self.query.filter(self.manager, **query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 78, in filter
+    return self._invoke_client_enum(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 56, in _invoke_client_enum
+    data = results.build_full_result()
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/paginate.py", line 479, in build_full_result
+    for response in self:
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 766, in _make_request
+    return self.retry(self._method, **current_kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/utils.py", line 452, in _retry
+    return func(*args, **kw)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnauthorizedOperation) when calling the DescribeInstances operation: You are not authorized to perform this operation.
+2023-07-18 09:17:18,886 - custodian.policy - INFO - Provisioning policy lambda: notify-running-instances region: us-east-1
+2023-07-18 10:27:51,619 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 142, in resources
+    return super(EC2, self).resources(query=query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 543, in resources
+    resources = self.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 599, in augment
+    return self.source.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 81, in augment
+    tag_set = self.manager.retry(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/utils.py", line 452, in _retry
+    return func(*args, **kw)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnauthorizedOperation) when calling the DescribeTags operation: You are not authorized to perform this operation.
+2023-07-18 10:32:01,733 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 142, in resources
+    return super(EC2, self).resources(query=query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 543, in resources
+    resources = self.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 599, in augment
+    return self.source.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 81, in augment
+    tag_set = self.manager.retry(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/utils.py", line 452, in _retry
+    return func(*args, **kw)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnauthorizedOperation) when calling the DescribeTags operation: You are not authorized to perform this operation.
+2023-07-18 10:36:15,974 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 142, in resources
+    return super(EC2, self).resources(query=query)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 543, in resources
+    resources = self.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/query.py", line 599, in augment
+    return self.source.augment(resources)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/resources/ec2.py", line 81, in augment
+    tag_set = self.manager.retry(
+  File "/home/soumya/custodian/lib/python3.8/site-packages/c7n/utils.py", line 452, in _retry
+    return func(*args, **kw)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/soumya/custodian/lib/python3.8/site-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnauthorizedOperation) when calling the DescribeTags operation: You are not authorized to perform this operation.
+2023-07-18 10:39:38,524 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:2 time:2.75
+2023-07-18 10:39:40,884 - custodian.actions - INFO - sent message:b421c8bb-a874-4a09-ae84-ec24922a4396 policy:notify-running-instances template:default.html count:2
+2023-07-18 10:39:40,886 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:2 execution_time:2.36
+2023-07-18 10:42:22,668 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:2 time:2.57
+2023-07-18 10:42:25,138 - custodian.actions - INFO - sent message:a2e95ef3-8edb-4354-9711-5cfb2faf3bba policy:notify-running-instances template:default.html count:2
+2023-07-18 10:42:25,140 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:2 execution_time:2.47
+2023-07-18 10:48:52,846 - custodian.policy - INFO - policy:notify-running-instances resource:aws.ec2 region:us-east-1 count:2 time:3.01
+2023-07-18 10:48:55,136 - custodian.actions - INFO - sent message:274d409d-07ca-4398-986d-b9c5188f7306 policy:notify-running-instances template:default.html count:2
+2023-07-18 10:48:55,138 - custodian.policy - INFO - policy:notify-running-instances action:notify resources:2 execution_time:2.29

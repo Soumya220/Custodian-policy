@@ -1,0 +1,5 @@
+2023-07-17 14:56:41,204 - custodian.policy - INFO - policy:ec2-off-hours-instances resource:ec2 region:us-east-1 count:0 time:1.24
+2023-07-17 14:57:06,547 - custodian.policy - INFO - policy:ec2-off-hours-instances resource:ec2 region:us-east-1 count:0 time:1.17
+2023-07-17 14:57:16,156 - custodian.policy - INFO - policy:ec2-off-hours-instances resource:ec2 region:us-east-1 count:0 time:1.16
+2023-07-17 14:57:27,818 - custodian.policy - INFO - policy:ec2-off-hours-instances resource:ec2 region:us-east-1 count:0 time:1.18
+2023-07-17 14:57:35,855 - custodian.policy - INFO - policy:ec2-off-hours-instances resource:ec2 region:us-east-1 count:0 time:1.14
